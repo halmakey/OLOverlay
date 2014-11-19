@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'OLOverlay', :exclusive => true do
+  pod "OLOverlay", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "OLOverlay", :path => "../"
+
+  
+end
