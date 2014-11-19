@@ -10,18 +10,13 @@
 Pod::Spec.new do |s|
   s.name             = "OLOverlay"
   s.version          = "0.1.0"
-  s.summary          = "A short description of OLOverlay."
-  s.description      = <<-DESC
-                       An optional longer description of OLOverlay
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/OLOverlay"
+  s.summary          = "Presents UIViewController like UIAlertView."
+  s.description      = "This library provides a category for UIViewController with support presention UIViewController like UIAlertView with custom animation."
+  s.homepage         = "https://github.com/halmakey/OLOverlay"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "halmakey" => "halmakey@cubicplus.net" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/OLOverlay.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/halmakey/OLOverlay.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
