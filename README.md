@@ -25,8 +25,6 @@ controller.overlayTapToClose = YES;
 }
 ```
 
-## Requirements
-
 ## Installation
 
 OLOverlay is available through [CocoaPods](http://cocoapods.org). To install
