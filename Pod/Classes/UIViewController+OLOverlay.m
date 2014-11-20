@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 halmakey. All rights reserved.
 //
 
-#import "UIViewController+Overlay.h"
+#import "UIViewController+OLOverlay.h"
 #import <objc/runtime.h>
 #import "OLOverlayProtocol.h"
 
@@ -41,13 +41,13 @@ ASSOCIATED_PROPERTY_POLICTY(type, OBJC_ASSOCIATION_COPY_NONATOMIC, name, Name)
 - (void)removeTarget:(id)target action:(SEL)action;
 @end
 
-@interface UIViewController (OverlayPrivate)
+@interface UIViewController (OLOverlayPrivate)
 @property (nonatomic) UIWindow *overlayWindow;
 @property (nonatomic) UIGestureOverlayInterceptor *overlayInterceptor;
 @property (nonatomic, setter = setOverlay:) BOOL isOverlay;
 @end
 
-@implementation UIViewController (Overlay)
+@implementation UIViewController (OLOverlay)
 
 ASSOCIATED_PROPERTY(UIWindow*, overlayWindow, OverlayWindow);
 ASSOCIATED_PROPERTY(UIGestureOverlayInterceptor*, overlayInterceptor, OverlayInterceptor);

@@ -8,6 +8,6 @@
 
 #import "OLOverlayProtocol.h"
 #import "OLOverlayAnimator.h"
-#import "UIViewController+Overlay.h"
+#import "UIViewController+OLOverlay.h"
 #import "OLSlideupOverlayAnimator.h"
 #import "OLZoomOverlayAnimator.h"

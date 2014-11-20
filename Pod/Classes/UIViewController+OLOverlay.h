@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "OLOverlayAnimator.h"
 
-@protocol UIViewControllerOverlayDelegate;
-
-@interface UIViewController (Overlay)
+@interface UIViewController (OLOverlay)
 @property (nonatomic) id<OLOverlayAnimator> overlayAnimator;
 @property (nonatomic) BOOL overlayTapToClose;
 @property (nonatomic, readonly) BOOL isOverlay;
