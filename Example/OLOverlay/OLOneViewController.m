@@ -8,6 +8,7 @@
 
 #import "OLOneViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import <OLOverlay.h>
 
 @interface OLOneViewController ()
 @property (weak, nonatomic) IBOutlet UIView *contentView;
@@ -23,6 +24,8 @@
     _contentView.layer.shadowRadius = 10;
     _contentView.layer.shadowOpacity = 0.4;
     _contentView.layer.cornerRadius = 6;
+    _contentView.layer.shouldRasterize = YES;
+    _contentView.layer.rasterizationScale = [UIScreen mainScreen].scale;
 
 }
 
@@ -31,17 +34,36 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-- (IBAction)dismissTapped:(id)sender {
+- (IBAction)closeTapped:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+- (IBAction)closeAllTapped:(id)sender {
+    for (UIViewController *controller in [UIViewController overlayViewControllers]) {
+        [controller dismissViewControllerAnimated:YES completion:nil];
+    }
+}
+
+- (IBAction)slideupTapped:(id)sender {
+    OLOneViewController *one = [[OLOneViewController alloc] init];
+    one.overlayAnimator = [OLSlideupOverlayAnimator animator];
+    [one showOverlay];
+}
+
+- (IBAction)zoomTapped:(id)sender {
+    OLOneViewController *one = [[OLOneViewController alloc] init];
+    one.overlayAnimator = [OLZoomOverlayAnimator animator];
+    [one showOverlay];
+}
+
+- (IBAction)alertTapped:(id)sender {
+    OLOneViewController *one = [[OLOneViewController alloc] init];
+    OLSlideupOverlayAnimator *animator = [OLSlideupOverlayAnimator animator];
+    animator.backgorundColor = [[UIColor redColor] colorWithAlphaComponent:0.5];
+    animator.scale = 4;
+    animator.duration = 0.5;
+    one.overlayAnimator = animator;
+    [one showOverlay];
+}
+
 @end
