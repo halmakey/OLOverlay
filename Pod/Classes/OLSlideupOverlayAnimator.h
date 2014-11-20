@@ -10,5 +10,8 @@
 #import "OLOverlayAnimator.h"
 
 @interface OLSlideupOverlayAnimator : NSObject <OLOverlayAnimator>
+@property (nonatomic) NSTimeInterval duration;
+@property (nonatomic) UIColor *backgorundColor;
+@property (nonatomic) CGFloat scale;
 + (instancetype)animator;
 @end
