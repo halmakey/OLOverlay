@@ -75,6 +75,11 @@ ASSOCIATED_PROPERTY(NSNumber*, overlayFlag, OverlayFlag);
     return controllers.copy;
 }
 
+- (void)showOverlay
+{
+    [self showOverlayAnimated:YES completion:nil];
+}
+
 - (void)showOverlayAnimated:(BOOL)animated completion:(void(^)())completion
 {
     [self setOverlay:YES];

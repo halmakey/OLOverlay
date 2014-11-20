@@ -17,5 +17,6 @@
 @property (nonatomic, readonly) BOOL isOverlay;
 
 + (NSArray*)overlayViewControllers;
+- (void)showOverlay;
 - (void)showOverlayAnimated:(BOOL)animated completion:(void(^)())completion;
 @end
