@@ -11,3 +11,4 @@
 #import "UIViewController+OLOverlay.h"
 #import "OLSlideupOverlayAnimator.h"
 #import "OLZoomOverlayAnimator.h"
+#import "OLFadeAnimator.h"
