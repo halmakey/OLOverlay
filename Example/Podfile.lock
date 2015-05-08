@@ -1,5 +1,5 @@
 PODS:
-  - OLOverlay (0.2.0)
+  - OLOverlay (0.4.0)
 
 DEPENDENCIES:
   - OLOverlay (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  OLOverlay: ed613a623b1a901ad6c1db08fa00e402f534d13e
+  OLOverlay: cca0aeb339188d60b55ff30cfa8d146de4d63a51
 
 COCOAPODS: 0.36.4

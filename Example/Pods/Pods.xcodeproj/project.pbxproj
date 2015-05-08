@@ -7,362 +7,311 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		076FAD46799DD3974474A4CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC024140DD8C48B9D9843CE1 /* Foundation.framework */; };
-		0AF0C102AEBAC94ABAD31E65 /* Pods-Tests-OLOverlay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFEE82BBFFC656D47A19778 /* Pods-Tests-OLOverlay-dummy.m */; };
-		0B9AE5FE2613ADF2EA5EBFC3 /* UIViewController+OLOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFD634A688DF8691C20A996 /* UIViewController+OLOverlay.h */; };
-		127EBAD60BA069B7628C5093 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC024140DD8C48B9D9843CE1 /* Foundation.framework */; };
-		19DB8F4946FC2FB6384594D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC024140DD8C48B9D9843CE1 /* Foundation.framework */; };
-		1F458F9F96BD8ADD1A58FFEE /* OLFadeAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 655A5A298869845071D35FA1 /* OLFadeAnimator.h */; };
-		21C919ED56FCAF1FE9115459 /* OLFadeAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 144B6D7AD26BFC844D2036B7 /* OLFadeAnimator.m */; };
-		249F1FCFCADAD9480F9BF681 /* Pods-OLOverlay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0937A6F45BA1DE2A5132AE22 /* Pods-OLOverlay-dummy.m */; };
-		270BD63E0C9CAF0E47FC1DAA /* UIViewController+OLOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE62988D417D38703F5987C /* UIViewController+OLOverlay.m */; };
-		608395F4261F88E8B6A2D5D6 /* UIViewController+OLOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE62988D417D38703F5987C /* UIViewController+OLOverlay.m */; };
-		60BA570A9DBA80F6F88A13FB /* OLOverlayProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 71DDEA9A271742369704ED60 /* OLOverlayProtocol.h */; };
-		78378AD9CE6FDA5BA1A29D6C /* OLOverlayProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 71DDEA9A271742369704ED60 /* OLOverlayProtocol.h */; };
-		7ACD81D29DA5495CEF1035BF /* OLZoomOverlayAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF21512E960D92CDAB4599 /* OLZoomOverlayAnimator.m */; };
-		7F61EC20A7CE3C1B97A4FE23 /* Pods-OLOverlay-OLOverlay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D813ACC5878536B01035D587 /* Pods-OLOverlay-OLOverlay-dummy.m */; };
-		8478BEA78B66FCA1E2BF735D /* OLFadeAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 655A5A298869845071D35FA1 /* OLFadeAnimator.h */; };
-		872D49F1622F10C028747F78 /* OLSlideupOverlayAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F6EE61802C016C9EF4B295B /* OLSlideupOverlayAnimator.h */; };
-		90F8272402D397137075F969 /* OLOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = BA275A0CE9EE24659E2002C5 /* OLOverlay.h */; };
-		9FA39398233E8397DAB5E9C9 /* OLZoomOverlayAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF21512E960D92CDAB4599 /* OLZoomOverlayAnimator.m */; };
-		A536B91AB0A64C1AA9C4F5AB /* UIViewController+OLOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFD634A688DF8691C20A996 /* UIViewController+OLOverlay.h */; };
-		ACFF7650594E70BF4383EE58 /* OLSlideupOverlayAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E716155AEF934511CBE897 /* OLSlideupOverlayAnimator.m */; };
-		C34FBBB5E032808987EE1016 /* OLSlideupOverlayAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E716155AEF934511CBE897 /* OLSlideupOverlayAnimator.m */; };
-		C896BEA06886BBBBD3BB1120 /* OLOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = BA275A0CE9EE24659E2002C5 /* OLOverlay.h */; };
-		D4EC930FDB4CCE8B1AA7125E /* OLOverlayAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 40A27B1955AF60A33D53D0FD /* OLOverlayAnimator.h */; };
-		D87977FA28472F645025A387 /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6233CF9283B86358C8C6E672 /* Pods-Tests-dummy.m */; };
-		E5EBAABF32916E1F008B5698 /* OLZoomOverlayAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 86BE03A72C3BE679F7F27A5C /* OLZoomOverlayAnimator.h */; };
-		EA0D8BD0280D9FB9A43A6085 /* OLZoomOverlayAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 86BE03A72C3BE679F7F27A5C /* OLZoomOverlayAnimator.h */; };
-		F3B1FDD9D9E27325EBDD0315 /* OLFadeAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 144B6D7AD26BFC844D2036B7 /* OLFadeAnimator.m */; };
-		F8CE71D407BBB207312E31B3 /* OLOverlayAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 40A27B1955AF60A33D53D0FD /* OLOverlayAnimator.h */; };
-		F939A1B85317C6757EDAB77C /* OLSlideupOverlayAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F6EE61802C016C9EF4B295B /* OLSlideupOverlayAnimator.h */; };
-		FA4CA829C7EEFD663C344B57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC024140DD8C48B9D9843CE1 /* Foundation.framework */; };
+		010CBB53818A7D60DC4268B8 /* UIViewController+OLOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = A171E56CF4765288EEC6C13D /* UIViewController+OLOverlay.h */; };
+		02BA7FA02B112997EE5DC7CB /* OLZoomOverlayAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6048BC74180C9F2BBF76A3EF /* OLZoomOverlayAnimator.m */; };
+		08238D29B4C7E1E7A6F594CE /* OLOverlayAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = A81A52F196BDF2C979AB46ED /* OLOverlayAnimator.h */; };
+		098810B8597DFD3BC1DA8DD2 /* OLOverlayProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 05C61286850369F0346297DB /* OLOverlayProtocol.h */; };
+		0F110317CC267D4EA30F5B5A /* OLFadeAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4272625C7E1CDA6A6BEC226C /* OLFadeAnimator.h */; };
+		10A43B8B20E747443467EDF7 /* UIViewController+OLOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = A171E56CF4765288EEC6C13D /* UIViewController+OLOverlay.h */; };
+		220F3765C2742A9479C4AF55 /* OLSlideupOverlayAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FFD3B40A8A0898E6E65ED50 /* OLSlideupOverlayAnimator.h */; };
+		2314CD01F9CC99D62FEBA78D /* OLSlideupOverlayAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C79684020EBA5C59F31CF58D /* OLSlideupOverlayAnimator.m */; };
+		3802BB384CC01CA7F6432701 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E69DDE5BE2C510B6BA17C67 /* Foundation.framework */; };
+		3D60E94367212FE713CF90DC /* OLOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CFD16505689A8EFFCB3A02D /* OLOverlay.h */; };
+		3FD3629DCBB11D28A3300E57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E69DDE5BE2C510B6BA17C67 /* Foundation.framework */; };
+		47E7B5CA386C630E058352D3 /* OLFadeAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6EF28F91D6118483585C17 /* OLFadeAnimator.m */; };
+		4DB591D60B0449A7A6F63CA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E69DDE5BE2C510B6BA17C67 /* Foundation.framework */; };
+		550468D20619016DACEDFC65 /* Pods-Tests-OLOverlay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6521299AD27399D59D73E1 /* Pods-Tests-OLOverlay-dummy.m */; };
+		62B03C22BF35F6209864BDDA /* OLFadeAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4272625C7E1CDA6A6BEC226C /* OLFadeAnimator.h */; };
+		66067C834CDF463A47FC7E1A /* OLOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CFD16505689A8EFFCB3A02D /* OLOverlay.h */; };
+		77456FE62098BAB34410DDF3 /* Pods-OLOverlay-OLOverlay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA96C062B4FDA54C72870AD0 /* Pods-OLOverlay-OLOverlay-dummy.m */; };
+		98A5B40CA4BFFE9FB5F66315 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E69DDE5BE2C510B6BA17C67 /* Foundation.framework */; };
+		A1503E9DB05C5DE4026FC83D /* OLFadeAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6EF28F91D6118483585C17 /* OLFadeAnimator.m */; };
+		AF6EB791C5A9B7A33D62F5CC /* UIViewController+OLOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = C050A64A62DE2802DDB69B71 /* UIViewController+OLOverlay.m */; };
+		B8805521CD69E4A0281C7B51 /* Pods-OLOverlay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4709A46A28001686A1E19B3B /* Pods-OLOverlay-dummy.m */; };
+		BB6EE15BAAE5C3DB85F857BF /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D64E41D23EE5D99EE46AE403 /* Pods-Tests-dummy.m */; };
+		C1893903C7A1FB31D714E24A /* OLOverlayProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 05C61286850369F0346297DB /* OLOverlayProtocol.h */; };
+		C8F35A131EBF97E05D169C51 /* UIViewController+OLOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = C050A64A62DE2802DDB69B71 /* UIViewController+OLOverlay.m */; };
+		CC183648749182A340A0D296 /* OLSlideupOverlayAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FFD3B40A8A0898E6E65ED50 /* OLSlideupOverlayAnimator.h */; };
+		CF2A4D97B9632C804137938F /* OLZoomOverlayAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = FF3BB50A5EC24190769D5797 /* OLZoomOverlayAnimator.h */; };
+		E107ADC81FB452A777DE8883 /* OLSlideupOverlayAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C79684020EBA5C59F31CF58D /* OLSlideupOverlayAnimator.m */; };
+		EAA64F4DDACB0C3842B8F3EE /* OLZoomOverlayAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = FF3BB50A5EC24190769D5797 /* OLZoomOverlayAnimator.h */; };
+		ED7E820BEAC18740A855F29A /* OLZoomOverlayAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6048BC74180C9F2BBF76A3EF /* OLZoomOverlayAnimator.m */; };
+		FE47AE8383296A044DB520A4 /* OLOverlayAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = A81A52F196BDF2C979AB46ED /* OLOverlayAnimator.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		166C4D5B566E68D70E58B749 /* PBXContainerItemProxy */ = {
+		B55942A6E40387A9D31FE314 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E29EC208CA9781335F155542 /* Project object */;
+			containerPortal = 1523682D631108236304B610 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2B404E7B578607A79A45E7FC;
+			remoteGlobalIDString = 61C545E57C3CC40387B59BD8;
 			remoteInfo = "Pods-Tests-OLOverlay";
 		};
-		6C7B3A58D7069F450F93702C /* PBXContainerItemProxy */ = {
+		C1381CFC6C4734A84437CE2A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E29EC208CA9781335F155542 /* Project object */;
+			containerPortal = 1523682D631108236304B610 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E7D1FAAE0F90AB55FCAB4D03;
+			remoteGlobalIDString = 1F2C3FB5889919DE8784C0DE;
 			remoteInfo = "Pods-OLOverlay-OLOverlay";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		038623FA5068FEC5419492D7 /* Pods-OLOverlay-OLOverlay-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OLOverlay-OLOverlay-Private.xcconfig"; sourceTree = "<group>"; };
-		0937A6F45BA1DE2A5132AE22 /* Pods-OLOverlay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OLOverlay-dummy.m"; sourceTree = "<group>"; };
-		138C88E4A66885A0A9646119 /* Pods-Tests-OLOverlay-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-OLOverlay-Private.xcconfig"; path = "../Pods-Tests-OLOverlay/Pods-Tests-OLOverlay-Private.xcconfig"; sourceTree = "<group>"; };
-		144B6D7AD26BFC844D2036B7 /* OLFadeAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OLFadeAnimator.m; sourceTree = "<group>"; };
-		1DFD634A688DF8691C20A996 /* UIViewController+OLOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+OLOverlay.h"; sourceTree = "<group>"; };
-		1EC8A96C3E7294B1D814A41E /* libPods-OLOverlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OLOverlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DCEBC53ED0DE1E3E141EA3A /* Pods-OLOverlay-OLOverlay.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OLOverlay-OLOverlay.xcconfig"; sourceTree = "<group>"; };
-		3F6EE61802C016C9EF4B295B /* OLSlideupOverlayAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OLSlideupOverlayAnimator.h; sourceTree = "<group>"; };
-		40A27B1955AF60A33D53D0FD /* OLOverlayAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OLOverlayAnimator.h; sourceTree = "<group>"; };
-		47B34B6C987CDDAD388C664C /* Pods-Tests-OLOverlay.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-OLOverlay.xcconfig"; path = "../Pods-Tests-OLOverlay/Pods-Tests-OLOverlay.xcconfig"; sourceTree = "<group>"; };
-		4AEC89EBE9CECA90B8B10FF8 /* libPods-Tests-OLOverlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-OLOverlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AFEE82BBFFC656D47A19778 /* Pods-Tests-OLOverlay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Tests-OLOverlay-dummy.m"; path = "../Pods-Tests-OLOverlay/Pods-Tests-OLOverlay-dummy.m"; sourceTree = "<group>"; };
-		4ECF21512E960D92CDAB4599 /* OLZoomOverlayAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OLZoomOverlayAnimator.m; sourceTree = "<group>"; };
-		569A0781B8C22C2CFB95C53E /* Pods-OLOverlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OLOverlay.release.xcconfig"; sourceTree = "<group>"; };
-		59407654C6573BE1ED2193CD /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		6233CF9283B86358C8C6E672 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
-		655A5A298869845071D35FA1 /* OLFadeAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OLFadeAnimator.h; sourceTree = "<group>"; };
-		65E716155AEF934511CBE897 /* OLSlideupOverlayAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OLSlideupOverlayAnimator.m; sourceTree = "<group>"; };
-		71DDEA9A271742369704ED60 /* OLOverlayProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OLOverlayProtocol.h; sourceTree = "<group>"; };
-		777B5003C902C48BFAC9E0EF /* Pods-OLOverlay-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OLOverlay-resources.sh"; sourceTree = "<group>"; };
-		7D971DEFA5306BF6479E73CA /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
-		8202884D7CEC9F49BD06A165 /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
-		86BE03A72C3BE679F7F27A5C /* OLZoomOverlayAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OLZoomOverlayAnimator.h; sourceTree = "<group>"; };
-		8D41F90A28EC608619EFD1A6 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		8E1C52A51ECC54114F3AC434 /* libPods-OLOverlay-OLOverlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OLOverlay-OLOverlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E6DFCCD1D3D2213EF207E31 /* Pods-OLOverlay-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OLOverlay-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9532F728506DCE3AAA6C5F59 /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		96D007CC88FF43046559046A /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		9BC3CD4A4556D2931310CDDB /* Pods-OLOverlay-OLOverlay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OLOverlay-OLOverlay-prefix.pch"; sourceTree = "<group>"; };
-		A852264B3E87E02D5B854E47 /* Pods-OLOverlay-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OLOverlay-acknowledgements.plist"; sourceTree = "<group>"; };
-		AE9EC24E47C31CFA21A19CD5 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		AFE62988D417D38703F5987C /* UIViewController+OLOverlay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+OLOverlay.m"; sourceTree = "<group>"; };
-		BA275A0CE9EE24659E2002C5 /* OLOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OLOverlay.h; sourceTree = "<group>"; };
-		C7A95F0660085B6435EEB40E /* Pods-Tests-OLOverlay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Tests-OLOverlay-prefix.pch"; path = "../Pods-Tests-OLOverlay/Pods-Tests-OLOverlay-prefix.pch"; sourceTree = "<group>"; };
-		CC211A8E3B895A507945F5AC /* Pods-OLOverlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OLOverlay.debug.xcconfig"; sourceTree = "<group>"; };
-		D129C48F27D8A0CE3D4EB757 /* Pods-OLOverlay-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OLOverlay-environment.h"; sourceTree = "<group>"; };
-		D813ACC5878536B01035D587 /* Pods-OLOverlay-OLOverlay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OLOverlay-OLOverlay-dummy.m"; sourceTree = "<group>"; };
-		D8CE956602C493959CEE7BBA /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC024140DD8C48B9D9843CE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		00B3F92D457B0C6DB90A4F29 /* Pods-OLOverlay-OLOverlay.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OLOverlay-OLOverlay.xcconfig"; sourceTree = "<group>"; };
+		05C61286850369F0346297DB /* OLOverlayProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OLOverlayProtocol.h; sourceTree = "<group>"; };
+		14523084144DD32E5DFD862D /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E69DDE5BE2C510B6BA17C67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		21349B4E500B5C1616A61B17 /* libPods-OLOverlay-OLOverlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OLOverlay-OLOverlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39ED7BEAE763D1230802831C /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4272625C7E1CDA6A6BEC226C /* OLFadeAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OLFadeAnimator.h; sourceTree = "<group>"; };
+		4709A46A28001686A1E19B3B /* Pods-OLOverlay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OLOverlay-dummy.m"; sourceTree = "<group>"; };
+		4A6EF28F91D6118483585C17 /* OLFadeAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OLFadeAnimator.m; sourceTree = "<group>"; };
+		502FD199A1BA673DB1E61D25 /* Pods-Tests-OLOverlay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Tests-OLOverlay-prefix.pch"; path = "../Pods-Tests-OLOverlay/Pods-Tests-OLOverlay-prefix.pch"; sourceTree = "<group>"; };
+		6048BC74180C9F2BBF76A3EF /* OLZoomOverlayAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OLZoomOverlayAnimator.m; sourceTree = "<group>"; };
+		6C6521299AD27399D59D73E1 /* Pods-Tests-OLOverlay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Tests-OLOverlay-dummy.m"; path = "../Pods-Tests-OLOverlay/Pods-Tests-OLOverlay-dummy.m"; sourceTree = "<group>"; };
+		72907AB12483B2ED6A0670B2 /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
+		77E52B76986B4827B1D03336 /* Pods-OLOverlay-OLOverlay-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OLOverlay-OLOverlay-Private.xcconfig"; sourceTree = "<group>"; };
+		7FFD3B40A8A0898E6E65ED50 /* OLSlideupOverlayAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OLSlideupOverlayAnimator.h; sourceTree = "<group>"; };
+		8B82D22CB3F5E99B29A9061A /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8B9D523439B7F649CC9D2718 /* Pods-OLOverlay-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OLOverlay-resources.sh"; sourceTree = "<group>"; };
+		9990695839D5BC3E6AB6DE4B /* Pods-OLOverlay-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OLOverlay-environment.h"; sourceTree = "<group>"; };
+		9CFD16505689A8EFFCB3A02D /* OLOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OLOverlay.h; sourceTree = "<group>"; };
+		9E871F3EF1C745FD8BCB3BA0 /* Pods-Tests-OLOverlay.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-OLOverlay.xcconfig"; path = "../Pods-Tests-OLOverlay/Pods-Tests-OLOverlay.xcconfig"; sourceTree = "<group>"; };
+		A171E56CF4765288EEC6C13D /* UIViewController+OLOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+OLOverlay.h"; sourceTree = "<group>"; };
+		A3D6B80193D26A21CF3EA185 /* Pods-OLOverlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OLOverlay.debug.xcconfig"; sourceTree = "<group>"; };
+		A81A52F196BDF2C979AB46ED /* OLOverlayAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OLOverlayAnimator.h; sourceTree = "<group>"; };
+		B4B66BAEAD8CC85A2AE46987 /* Pods-OLOverlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OLOverlay.release.xcconfig"; sourceTree = "<group>"; };
+		B61C4EB845FC93CC6400B32F /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BA96C062B4FDA54C72870AD0 /* Pods-OLOverlay-OLOverlay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OLOverlay-OLOverlay-dummy.m"; sourceTree = "<group>"; };
+		C050A64A62DE2802DDB69B71 /* UIViewController+OLOverlay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+OLOverlay.m"; sourceTree = "<group>"; };
+		C79684020EBA5C59F31CF58D /* OLSlideupOverlayAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OLSlideupOverlayAnimator.m; sourceTree = "<group>"; };
+		CC9B27BBABC0867A6354C007 /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CDDA18750F38DB9BBB4367E9 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D029F744B45EFE2396049C6D /* Pods-OLOverlay-OLOverlay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OLOverlay-OLOverlay-prefix.pch"; sourceTree = "<group>"; };
+		D248B8A4F02B6176FFF1C5E7 /* libPods-Tests-OLOverlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-OLOverlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D496B5C01379153B5B0B915F /* Pods-OLOverlay-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OLOverlay-acknowledgements.plist"; sourceTree = "<group>"; };
+		D64E41D23EE5D99EE46AE403 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
+		E1185E4B19A72DB28ABBFF26 /* Pods-OLOverlay-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OLOverlay-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E87EC4490D1FFA2AEB502FEC /* libPods-OLOverlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OLOverlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4EB21082C43D40D18C83E2 /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
+		FCEE5482D03D8F2E5BC4E1A6 /* Pods-Tests-OLOverlay-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-OLOverlay-Private.xcconfig"; path = "../Pods-Tests-OLOverlay/Pods-Tests-OLOverlay-Private.xcconfig"; sourceTree = "<group>"; };
+		FF3BB50A5EC24190769D5797 /* OLZoomOverlayAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OLZoomOverlayAnimator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		887AF3AE47825BB352E55BE4 /* Frameworks */ = {
+		5892D214A5DEB12DE2B074CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				076FAD46799DD3974474A4CC /* Foundation.framework in Frameworks */,
+				98A5B40CA4BFFE9FB5F66315 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		977700AA7063AF2E07FECD82 /* Frameworks */ = {
+		7B154BCF7EE53815E92E1D13 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA4CA829C7EEFD663C344B57 /* Foundation.framework in Frameworks */,
+				3FD3629DCBB11D28A3300E57 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A7E4D92B1B7EB6E7A5C42654 /* Frameworks */ = {
+		C341EB6D947DA65C755B0EC9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				127EBAD60BA069B7628C5093 /* Foundation.framework in Frameworks */,
+				3802BB384CC01CA7F6432701 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4E14B6A3621AEA4119D9389 /* Frameworks */ = {
+		D47C03288100E7BAF26FF109 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19DB8F4946FC2FB6384594D8 /* Foundation.framework in Frameworks */,
+				4DB591D60B0449A7A6F63CA3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0EB7E1EAC31C69896467F6F0 /* iOS */ = {
+		19C6ADEADA8F162995DD36FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FC024140DD8C48B9D9843CE1 /* Foundation.framework */,
+				9466C98CB8BA414A702AF685 /* iOS */,
 			);
-			name = iOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		15A1E2E29121A1E0D319A7D5 /* Pod */ = {
+		284D3F7258B2D55C5F1C802B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CD79C0B1DDD3D7A94DACE509 /* Classes */,
+				4272625C7E1CDA6A6BEC226C /* OLFadeAnimator.h */,
+				4A6EF28F91D6118483585C17 /* OLFadeAnimator.m */,
+				9CFD16505689A8EFFCB3A02D /* OLOverlay.h */,
+				A81A52F196BDF2C979AB46ED /* OLOverlayAnimator.h */,
+				05C61286850369F0346297DB /* OLOverlayProtocol.h */,
+				7FFD3B40A8A0898E6E65ED50 /* OLSlideupOverlayAnimator.h */,
+				C79684020EBA5C59F31CF58D /* OLSlideupOverlayAnimator.m */,
+				FF3BB50A5EC24190769D5797 /* OLZoomOverlayAnimator.h */,
+				6048BC74180C9F2BBF76A3EF /* OLZoomOverlayAnimator.m */,
+				A171E56CF4765288EEC6C13D /* UIViewController+OLOverlay.h */,
+				C050A64A62DE2802DDB69B71 /* UIViewController+OLOverlay.m */,
 			);
-			path = Pod;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		1BE52B983E567B83E83A907F /* Products */ = {
+		2940B24CCD71E66CAF2B3AA5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1EC8A96C3E7294B1D814A41E /* libPods-OLOverlay.a */,
-				8E1C52A51ECC54114F3AC434 /* libPods-OLOverlay-OLOverlay.a */,
-				D8CE956602C493959CEE7BBA /* libPods-Tests.a */,
-				4AEC89EBE9CECA90B8B10FF8 /* libPods-Tests-OLOverlay.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3C070ADF1CF37B7E3F2A6BBC /* Pods-OLOverlay */ = {
-			isa = PBXGroup;
-			children = (
-				8E6DFCCD1D3D2213EF207E31 /* Pods-OLOverlay-acknowledgements.markdown */,
-				A852264B3E87E02D5B854E47 /* Pods-OLOverlay-acknowledgements.plist */,
-				0937A6F45BA1DE2A5132AE22 /* Pods-OLOverlay-dummy.m */,
-				D129C48F27D8A0CE3D4EB757 /* Pods-OLOverlay-environment.h */,
-				777B5003C902C48BFAC9E0EF /* Pods-OLOverlay-resources.sh */,
-				CC211A8E3B895A507945F5AC /* Pods-OLOverlay.debug.xcconfig */,
-				569A0781B8C22C2CFB95C53E /* Pods-OLOverlay.release.xcconfig */,
-			);
-			name = "Pods-OLOverlay";
-			path = "Target Support Files/Pods-OLOverlay";
-			sourceTree = "<group>";
-		};
-		57C20D67DC18C2DBFA01D925 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3C070ADF1CF37B7E3F2A6BBC /* Pods-OLOverlay */,
-				DB738D436B5850FC883D0CD7 /* Pods-Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		835C815AFF1DF49F8EF37EEB /* OLOverlay */ = {
-			isa = PBXGroup;
-			children = (
-				15A1E2E29121A1E0D319A7D5 /* Pod */,
-				9075D055432C41E8B2E8A0CB /* Support Files */,
-			);
-			name = OLOverlay;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		9075D055432C41E8B2E8A0CB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3DCEBC53ED0DE1E3E141EA3A /* Pods-OLOverlay-OLOverlay.xcconfig */,
-				038623FA5068FEC5419492D7 /* Pods-OLOverlay-OLOverlay-Private.xcconfig */,
-				D813ACC5878536B01035D587 /* Pods-OLOverlay-OLOverlay-dummy.m */,
-				9BC3CD4A4556D2931310CDDB /* Pods-OLOverlay-OLOverlay-prefix.pch */,
-				47B34B6C987CDDAD388C664C /* Pods-Tests-OLOverlay.xcconfig */,
-				138C88E4A66885A0A9646119 /* Pods-Tests-OLOverlay-Private.xcconfig */,
-				4AFEE82BBFFC656D47A19778 /* Pods-Tests-OLOverlay-dummy.m */,
-				C7A95F0660085B6435EEB40E /* Pods-Tests-OLOverlay-prefix.pch */,
+				00B3F92D457B0C6DB90A4F29 /* Pods-OLOverlay-OLOverlay.xcconfig */,
+				77E52B76986B4827B1D03336 /* Pods-OLOverlay-OLOverlay-Private.xcconfig */,
+				BA96C062B4FDA54C72870AD0 /* Pods-OLOverlay-OLOverlay-dummy.m */,
+				D029F744B45EFE2396049C6D /* Pods-OLOverlay-OLOverlay-prefix.pch */,
+				9E871F3EF1C745FD8BCB3BA0 /* Pods-Tests-OLOverlay.xcconfig */,
+				FCEE5482D03D8F2E5BC4E1A6 /* Pods-Tests-OLOverlay-Private.xcconfig */,
+				6C6521299AD27399D59D73E1 /* Pods-Tests-OLOverlay-dummy.m */,
+				502FD199A1BA673DB1E61D25 /* Pods-Tests-OLOverlay-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/Pods-OLOverlay-OLOverlay";
 			sourceTree = "<group>";
 		};
-		AF4E5621E9588E36D52CE786 = {
+		42CEF6975AE11A8AC96FBFF0 /* Pods-Tests */ = {
 			isa = PBXGroup;
 			children = (
-				8D41F90A28EC608619EFD1A6 /* Podfile */,
-				E4212A01F708653BDA88A826 /* Development Pods */,
-				C8287331BC54B8B970ABC3B6 /* Frameworks */,
-				1BE52B983E567B83E83A907F /* Products */,
-				57C20D67DC18C2DBFA01D925 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		C8287331BC54B8B970ABC3B6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0EB7E1EAC31C69896467F6F0 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CD79C0B1DDD3D7A94DACE509 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				BA275A0CE9EE24659E2002C5 /* OLOverlay.h */,
-				40A27B1955AF60A33D53D0FD /* OLOverlayAnimator.h */,
-				71DDEA9A271742369704ED60 /* OLOverlayProtocol.h */,
-				655A5A298869845071D35FA1 /* OLFadeAnimator.h */,
-				144B6D7AD26BFC844D2036B7 /* OLFadeAnimator.m */,
-				3F6EE61802C016C9EF4B295B /* OLSlideupOverlayAnimator.h */,
-				65E716155AEF934511CBE897 /* OLSlideupOverlayAnimator.m */,
-				86BE03A72C3BE679F7F27A5C /* OLZoomOverlayAnimator.h */,
-				4ECF21512E960D92CDAB4599 /* OLZoomOverlayAnimator.m */,
-				1DFD634A688DF8691C20A996 /* UIViewController+OLOverlay.h */,
-				AFE62988D417D38703F5987C /* UIViewController+OLOverlay.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		DB738D436B5850FC883D0CD7 /* Pods-Tests */ = {
-			isa = PBXGroup;
-			children = (
-				9532F728506DCE3AAA6C5F59 /* Pods-Tests-acknowledgements.markdown */,
-				59407654C6573BE1ED2193CD /* Pods-Tests-acknowledgements.plist */,
-				6233CF9283B86358C8C6E672 /* Pods-Tests-dummy.m */,
-				8202884D7CEC9F49BD06A165 /* Pods-Tests-environment.h */,
-				7D971DEFA5306BF6479E73CA /* Pods-Tests-resources.sh */,
-				AE9EC24E47C31CFA21A19CD5 /* Pods-Tests.debug.xcconfig */,
-				96D007CC88FF43046559046A /* Pods-Tests.release.xcconfig */,
+				B61C4EB845FC93CC6400B32F /* Pods-Tests-acknowledgements.markdown */,
+				CC9B27BBABC0867A6354C007 /* Pods-Tests-acknowledgements.plist */,
+				D64E41D23EE5D99EE46AE403 /* Pods-Tests-dummy.m */,
+				ED4EB21082C43D40D18C83E2 /* Pods-Tests-environment.h */,
+				72907AB12483B2ED6A0670B2 /* Pods-Tests-resources.sh */,
+				39ED7BEAE763D1230802831C /* Pods-Tests.debug.xcconfig */,
+				8B82D22CB3F5E99B29A9061A /* Pods-Tests.release.xcconfig */,
 			);
 			name = "Pods-Tests";
 			path = "Target Support Files/Pods-Tests";
 			sourceTree = "<group>";
 		};
-		E4212A01F708653BDA88A826 /* Development Pods */ = {
+		4F57292D3FAC01ACE4B081CF /* Pods-OLOverlay */ = {
 			isa = PBXGroup;
 			children = (
-				835C815AFF1DF49F8EF37EEB /* OLOverlay */,
+				E1185E4B19A72DB28ABBFF26 /* Pods-OLOverlay-acknowledgements.markdown */,
+				D496B5C01379153B5B0B915F /* Pods-OLOverlay-acknowledgements.plist */,
+				4709A46A28001686A1E19B3B /* Pods-OLOverlay-dummy.m */,
+				9990695839D5BC3E6AB6DE4B /* Pods-OLOverlay-environment.h */,
+				8B9D523439B7F649CC9D2718 /* Pods-OLOverlay-resources.sh */,
+				A3D6B80193D26A21CF3EA185 /* Pods-OLOverlay.debug.xcconfig */,
+				B4B66BAEAD8CC85A2AE46987 /* Pods-OLOverlay.release.xcconfig */,
+			);
+			name = "Pods-OLOverlay";
+			path = "Target Support Files/Pods-OLOverlay";
+			sourceTree = "<group>";
+		};
+		694B0BD88DB7AD989EFC3917 /* OLOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				DDA2F6E14B361730B81F76DC /* Pod */,
+				2940B24CCD71E66CAF2B3AA5 /* Support Files */,
+			);
+			name = OLOverlay;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7ACDC51AD354CF4ECEF20645 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				694B0BD88DB7AD989EFC3917 /* OLOverlay */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DDDA0E1BF26E184FDE13517 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E87EC4490D1FFA2AEB502FEC /* libPods-OLOverlay.a */,
+				21349B4E500B5C1616A61B17 /* libPods-OLOverlay-OLOverlay.a */,
+				14523084144DD32E5DFD862D /* libPods-Tests.a */,
+				D248B8A4F02B6176FFF1C5E7 /* libPods-Tests-OLOverlay.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9466C98CB8BA414A702AF685 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1E69DDE5BE2C510B6BA17C67 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF84F0038809C6EC572F0444 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F57292D3FAC01ACE4B081CF /* Pods-OLOverlay */,
+				42CEF6975AE11A8AC96FBFF0 /* Pods-Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DDA2F6E14B361730B81F76DC /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				284D3F7258B2D55C5F1C802B /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		FA655C149355BF030D6C0026 = {
+			isa = PBXGroup;
+			children = (
+				CDDA18750F38DB9BBB4367E9 /* Podfile */,
+				7ACDC51AD354CF4ECEF20645 /* Development Pods */,
+				19C6ADEADA8F162995DD36FA /* Frameworks */,
+				7DDDA0E1BF26E184FDE13517 /* Products */,
+				CF84F0038809C6EC572F0444 /* Targets Support Files */,
+			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		15E51BC4B15E96599A1E58AA /* Headers */ = {
+		321882FA99765A1D05242BA6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F458F9F96BD8ADD1A58FFEE /* OLFadeAnimator.h in Headers */,
-				C896BEA06886BBBBD3BB1120 /* OLOverlay.h in Headers */,
-				D4EC930FDB4CCE8B1AA7125E /* OLOverlayAnimator.h in Headers */,
-				60BA570A9DBA80F6F88A13FB /* OLOverlayProtocol.h in Headers */,
-				F939A1B85317C6757EDAB77C /* OLSlideupOverlayAnimator.h in Headers */,
-				EA0D8BD0280D9FB9A43A6085 /* OLZoomOverlayAnimator.h in Headers */,
-				0B9AE5FE2613ADF2EA5EBFC3 /* UIViewController+OLOverlay.h in Headers */,
+				62B03C22BF35F6209864BDDA /* OLFadeAnimator.h in Headers */,
+				3D60E94367212FE713CF90DC /* OLOverlay.h in Headers */,
+				FE47AE8383296A044DB520A4 /* OLOverlayAnimator.h in Headers */,
+				098810B8597DFD3BC1DA8DD2 /* OLOverlayProtocol.h in Headers */,
+				220F3765C2742A9479C4AF55 /* OLSlideupOverlayAnimator.h in Headers */,
+				EAA64F4DDACB0C3842B8F3EE /* OLZoomOverlayAnimator.h in Headers */,
+				010CBB53818A7D60DC4268B8 /* UIViewController+OLOverlay.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		94B4F106ADB513197B24D3A6 /* Headers */ = {
+		AF655E60CD5D6791A64734F9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8478BEA78B66FCA1E2BF735D /* OLFadeAnimator.h in Headers */,
-				90F8272402D397137075F969 /* OLOverlay.h in Headers */,
-				F8CE71D407BBB207312E31B3 /* OLOverlayAnimator.h in Headers */,
-				78378AD9CE6FDA5BA1A29D6C /* OLOverlayProtocol.h in Headers */,
-				872D49F1622F10C028747F78 /* OLSlideupOverlayAnimator.h in Headers */,
-				E5EBAABF32916E1F008B5698 /* OLZoomOverlayAnimator.h in Headers */,
-				A536B91AB0A64C1AA9C4F5AB /* UIViewController+OLOverlay.h in Headers */,
+				0F110317CC267D4EA30F5B5A /* OLFadeAnimator.h in Headers */,
+				66067C834CDF463A47FC7E1A /* OLOverlay.h in Headers */,
+				08238D29B4C7E1E7A6F594CE /* OLOverlayAnimator.h in Headers */,
+				C1893903C7A1FB31D714E24A /* OLOverlayProtocol.h in Headers */,
+				CC183648749182A340A0D296 /* OLSlideupOverlayAnimator.h in Headers */,
+				CF2A4D97B9632C804137938F /* OLZoomOverlayAnimator.h in Headers */,
+				10A43B8B20E747443467EDF7 /* UIViewController+OLOverlay.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		045E9E31CE8E4B6F58C8281F /* Pods-OLOverlay */ = {
+		1F2C3FB5889919DE8784C0DE /* Pods-OLOverlay-OLOverlay */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D8B024BE3209FCF61F32CD6 /* Build configuration list for PBXNativeTarget "Pods-OLOverlay" */;
+			buildConfigurationList = 445B24F1EEB9E6AC7CF3F151 /* Build configuration list for PBXNativeTarget "Pods-OLOverlay-OLOverlay" */;
 			buildPhases = (
-				94325910544D0A91DC7E58B2 /* Sources */,
-				887AF3AE47825BB352E55BE4 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E82963384C429C09C11AF454 /* PBXTargetDependency */,
-			);
-			name = "Pods-OLOverlay";
-			productName = "Pods-OLOverlay";
-			productReference = 1EC8A96C3E7294B1D814A41E /* libPods-OLOverlay.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		2B404E7B578607A79A45E7FC /* Pods-Tests-OLOverlay */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B1ABB9BE8F10407B9565CA2 /* Build configuration list for PBXNativeTarget "Pods-Tests-OLOverlay" */;
-			buildPhases = (
-				A426EC959389147E47FF227B /* Sources */,
-				A7E4D92B1B7EB6E7A5C42654 /* Frameworks */,
-				94B4F106ADB513197B24D3A6 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Tests-OLOverlay";
-			productName = "Pods-Tests-OLOverlay";
-			productReference = 4AEC89EBE9CECA90B8B10FF8 /* libPods-Tests-OLOverlay.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		649D8C890E4FD3E2A183A09C /* Pods-Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 79AFC008689B10F7C0DD7738 /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
-			buildPhases = (
-				029A9C894973F95F187A9919 /* Sources */,
-				B4E14B6A3621AEA4119D9389 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				068782550E521E2EB7DA5D99 /* PBXTargetDependency */,
-			);
-			name = "Pods-Tests";
-			productName = "Pods-Tests";
-			productReference = D8CE956602C493959CEE7BBA /* libPods-Tests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		E7D1FAAE0F90AB55FCAB4D03 /* Pods-OLOverlay-OLOverlay */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A3D6295E943237A1606E8B95 /* Build configuration list for PBXNativeTarget "Pods-OLOverlay-OLOverlay" */;
-			buildPhases = (
-				62CBCD8A0729D42E3AAF13B8 /* Sources */,
-				977700AA7063AF2E07FECD82 /* Frameworks */,
-				15E51BC4B15E96599A1E58AA /* Headers */,
+				EA8C6B0E894891A49B8FE4DC /* Sources */,
+				C341EB6D947DA65C755B0EC9 /* Frameworks */,
+				AF655E60CD5D6791A64734F9 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -370,99 +319,166 @@
 			);
 			name = "Pods-OLOverlay-OLOverlay";
 			productName = "Pods-OLOverlay-OLOverlay";
-			productReference = 8E1C52A51ECC54114F3AC434 /* libPods-OLOverlay-OLOverlay.a */;
+			productReference = 21349B4E500B5C1616A61B17 /* libPods-OLOverlay-OLOverlay.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2A5B95610E8A35A0EF5FF59B /* Pods-OLOverlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4FE5D28A9F7074FD3915955 /* Build configuration list for PBXNativeTarget "Pods-OLOverlay" */;
+			buildPhases = (
+				E8C3219EC1BE083A30FEB0AA /* Sources */,
+				5892D214A5DEB12DE2B074CE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E873413F85E92F4FFF90A00C /* PBXTargetDependency */,
+			);
+			name = "Pods-OLOverlay";
+			productName = "Pods-OLOverlay";
+			productReference = E87EC4490D1FFA2AEB502FEC /* libPods-OLOverlay.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		61C545E57C3CC40387B59BD8 /* Pods-Tests-OLOverlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B44D650546881F05D3559744 /* Build configuration list for PBXNativeTarget "Pods-Tests-OLOverlay" */;
+			buildPhases = (
+				4D4B163D41BCFA4839DB4E85 /* Sources */,
+				7B154BCF7EE53815E92E1D13 /* Frameworks */,
+				321882FA99765A1D05242BA6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Tests-OLOverlay";
+			productName = "Pods-Tests-OLOverlay";
+			productReference = D248B8A4F02B6176FFF1C5E7 /* libPods-Tests-OLOverlay.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DBEBE20F8ACB66140F6C4220 /* Pods-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4224C0F40E008155AC391B07 /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
+			buildPhases = (
+				6AABB9CC635C44D2F7CAF26C /* Sources */,
+				D47C03288100E7BAF26FF109 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				076D054B627590B3B9DC282A /* PBXTargetDependency */,
+			);
+			name = "Pods-Tests";
+			productName = "Pods-Tests";
+			productReference = 14523084144DD32E5DFD862D /* libPods-Tests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E29EC208CA9781335F155542 /* Project object */ = {
+		1523682D631108236304B610 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 02841AD6E44B29A54D0F62EB /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 67F809DE1B68730A3636F853 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = AF4E5621E9588E36D52CE786;
-			productRefGroup = 1BE52B983E567B83E83A907F /* Products */;
+			mainGroup = FA655C149355BF030D6C0026;
+			productRefGroup = 7DDDA0E1BF26E184FDE13517 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				045E9E31CE8E4B6F58C8281F /* Pods-OLOverlay */,
-				E7D1FAAE0F90AB55FCAB4D03 /* Pods-OLOverlay-OLOverlay */,
-				649D8C890E4FD3E2A183A09C /* Pods-Tests */,
-				2B404E7B578607A79A45E7FC /* Pods-Tests-OLOverlay */,
+				2A5B95610E8A35A0EF5FF59B /* Pods-OLOverlay */,
+				1F2C3FB5889919DE8784C0DE /* Pods-OLOverlay-OLOverlay */,
+				DBEBE20F8ACB66140F6C4220 /* Pods-Tests */,
+				61C545E57C3CC40387B59BD8 /* Pods-Tests-OLOverlay */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		029A9C894973F95F187A9919 /* Sources */ = {
+		4D4B163D41BCFA4839DB4E85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D87977FA28472F645025A387 /* Pods-Tests-dummy.m in Sources */,
+				47E7B5CA386C630E058352D3 /* OLFadeAnimator.m in Sources */,
+				2314CD01F9CC99D62FEBA78D /* OLSlideupOverlayAnimator.m in Sources */,
+				ED7E820BEAC18740A855F29A /* OLZoomOverlayAnimator.m in Sources */,
+				550468D20619016DACEDFC65 /* Pods-Tests-OLOverlay-dummy.m in Sources */,
+				C8F35A131EBF97E05D169C51 /* UIViewController+OLOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62CBCD8A0729D42E3AAF13B8 /* Sources */ = {
+		6AABB9CC635C44D2F7CAF26C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3B1FDD9D9E27325EBDD0315 /* OLFadeAnimator.m in Sources */,
-				ACFF7650594E70BF4383EE58 /* OLSlideupOverlayAnimator.m in Sources */,
-				7ACD81D29DA5495CEF1035BF /* OLZoomOverlayAnimator.m in Sources */,
-				7F61EC20A7CE3C1B97A4FE23 /* Pods-OLOverlay-OLOverlay-dummy.m in Sources */,
-				608395F4261F88E8B6A2D5D6 /* UIViewController+OLOverlay.m in Sources */,
+				BB6EE15BAAE5C3DB85F857BF /* Pods-Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		94325910544D0A91DC7E58B2 /* Sources */ = {
+		E8C3219EC1BE083A30FEB0AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				249F1FCFCADAD9480F9BF681 /* Pods-OLOverlay-dummy.m in Sources */,
+				B8805521CD69E4A0281C7B51 /* Pods-OLOverlay-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A426EC959389147E47FF227B /* Sources */ = {
+		EA8C6B0E894891A49B8FE4DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21C919ED56FCAF1FE9115459 /* OLFadeAnimator.m in Sources */,
-				C34FBBB5E032808987EE1016 /* OLSlideupOverlayAnimator.m in Sources */,
-				9FA39398233E8397DAB5E9C9 /* OLZoomOverlayAnimator.m in Sources */,
-				0AF0C102AEBAC94ABAD31E65 /* Pods-Tests-OLOverlay-dummy.m in Sources */,
-				270BD63E0C9CAF0E47FC1DAA /* UIViewController+OLOverlay.m in Sources */,
+				A1503E9DB05C5DE4026FC83D /* OLFadeAnimator.m in Sources */,
+				E107ADC81FB452A777DE8883 /* OLSlideupOverlayAnimator.m in Sources */,
+				02BA7FA02B112997EE5DC7CB /* OLZoomOverlayAnimator.m in Sources */,
+				77456FE62098BAB34410DDF3 /* Pods-OLOverlay-OLOverlay-dummy.m in Sources */,
+				AF6EB791C5A9B7A33D62F5CC /* UIViewController+OLOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		068782550E521E2EB7DA5D99 /* PBXTargetDependency */ = {
+		076D054B627590B3B9DC282A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Tests-OLOverlay";
-			target = 2B404E7B578607A79A45E7FC /* Pods-Tests-OLOverlay */;
-			targetProxy = 166C4D5B566E68D70E58B749 /* PBXContainerItemProxy */;
+			target = 61C545E57C3CC40387B59BD8 /* Pods-Tests-OLOverlay */;
+			targetProxy = B55942A6E40387A9D31FE314 /* PBXContainerItemProxy */;
 		};
-		E82963384C429C09C11AF454 /* PBXTargetDependency */ = {
+		E873413F85E92F4FFF90A00C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-OLOverlay-OLOverlay";
-			target = E7D1FAAE0F90AB55FCAB4D03 /* Pods-OLOverlay-OLOverlay */;
-			targetProxy = 6C7B3A58D7069F450F93702C /* PBXContainerItemProxy */;
+			target = 1F2C3FB5889919DE8784C0DE /* Pods-OLOverlay-OLOverlay */;
+			targetProxy = C1381CFC6C4734A84437CE2A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		163FC6CDD5517D73B95E36D4 /* Debug */ = {
+		0F0051CFECA2B7243215DF0A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 138C88E4A66885A0A9646119 /* Pods-Tests-OLOverlay-Private.xcconfig */;
+			baseConfigurationReference = B4B66BAEAD8CC85A2AE46987 /* Pods-OLOverlay.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4CFC26CEDD5BDC0BF49698EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCEE5482D03D8F2E5BC4E1A6 /* Pods-Tests-OLOverlay-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-OLOverlay/Pods-Tests-OLOverlay-prefix.pch";
@@ -476,41 +492,41 @@
 			};
 			name = Debug;
 		};
-		1D765570A8DE94D705193ECD /* Release */ = {
+		5171043B3951C3C397AF50A5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96D007CC88FF43046559046A /* Pods-Tests.release.xcconfig */;
+			baseConfigurationReference = 77E52B76986B4827B1D03336 /* Pods-OLOverlay-OLOverlay-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-OLOverlay-OLOverlay/Pods-OLOverlay-OLOverlay-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		22D4A05763A3ECEBD7DA4972 /* Release */ = {
+		53020C90AC63866DECBC6BCB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 569A0781B8C22C2CFB95C53E /* Pods-OLOverlay.release.xcconfig */;
+			baseConfigurationReference = 77E52B76986B4827B1D03336 /* Pods-OLOverlay-OLOverlay-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-OLOverlay-OLOverlay/Pods-OLOverlay-OLOverlay-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
-		2A79BB150F242CCC7ED006E9 /* Release */ = {
+		7B59833C16C87E58E84CACD4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 138C88E4A66885A0A9646119 /* Pods-Tests-OLOverlay-Private.xcconfig */;
+			baseConfigurationReference = FCEE5482D03D8F2E5BC4E1A6 /* Pods-Tests-OLOverlay-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-OLOverlay/Pods-Tests-OLOverlay-prefix.pch";
@@ -524,23 +540,7 @@
 			};
 			name = Release;
 		};
-		2EC9DE2BB4B58CD367118840 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE9EC24E47C31CFA21A19CD5 /* Pods-Tests.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		52891225207832D5C4B2C13A /* Debug */ = {
+		897824D40FE63C74AC2BA478 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -579,9 +579,9 @@
 			};
 			name = Debug;
 		};
-		6E3A17D61B4B7CB615333DEA /* Debug */ = {
+		96A1B17883B1CA01870AAFA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC211A8E3B895A507945F5AC /* Pods-OLOverlay.debug.xcconfig */;
+			baseConfigurationReference = 39ED7BEAE763D1230802831C /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -595,7 +595,7 @@
 			};
 			name = Debug;
 		};
-		777C9F16B82DB991E1D8E038 /* Release */ = {
+		BF73155E40C6E69D8023E331 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -629,87 +629,87 @@
 			};
 			name = Release;
 		};
-		8FA9A5A623B99A7D47102B2D /* Debug */ = {
+		D1A03E66138A0060CC9F1609 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 038623FA5068FEC5419492D7 /* Pods-OLOverlay-OLOverlay-Private.xcconfig */;
+			baseConfigurationReference = 8B82D22CB3F5E99B29A9061A /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-OLOverlay-OLOverlay/Pods-OLOverlay-OLOverlay-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		B35A9F295F2873A418ABEC6A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 038623FA5068FEC5419492D7 /* Pods-OLOverlay-OLOverlay-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-OLOverlay-OLOverlay/Pods-OLOverlay-OLOverlay-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
+		FB549C956533CB1F88EE12A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3D6B80193D26A21CF3EA185 /* Pods-OLOverlay.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		02841AD6E44B29A54D0F62EB /* Build configuration list for PBXProject "Pods" */ = {
+		4224C0F40E008155AC391B07 /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				52891225207832D5C4B2C13A /* Debug */,
-				777C9F16B82DB991E1D8E038 /* Release */,
+				96A1B17883B1CA01870AAFA2 /* Debug */,
+				D1A03E66138A0060CC9F1609 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D8B024BE3209FCF61F32CD6 /* Build configuration list for PBXNativeTarget "Pods-OLOverlay" */ = {
+		445B24F1EEB9E6AC7CF3F151 /* Build configuration list for PBXNativeTarget "Pods-OLOverlay-OLOverlay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E3A17D61B4B7CB615333DEA /* Debug */,
-				22D4A05763A3ECEBD7DA4972 /* Release */,
+				53020C90AC63866DECBC6BCB /* Debug */,
+				5171043B3951C3C397AF50A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B1ABB9BE8F10407B9565CA2 /* Build configuration list for PBXNativeTarget "Pods-Tests-OLOverlay" */ = {
+		67F809DE1B68730A3636F853 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				163FC6CDD5517D73B95E36D4 /* Debug */,
-				2A79BB150F242CCC7ED006E9 /* Release */,
+				897824D40FE63C74AC2BA478 /* Debug */,
+				BF73155E40C6E69D8023E331 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79AFC008689B10F7C0DD7738 /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
+		B44D650546881F05D3559744 /* Build configuration list for PBXNativeTarget "Pods-Tests-OLOverlay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2EC9DE2BB4B58CD367118840 /* Debug */,
-				1D765570A8DE94D705193ECD /* Release */,
+				4CFC26CEDD5BDC0BF49698EE /* Debug */,
+				7B59833C16C87E58E84CACD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A3D6295E943237A1606E8B95 /* Build configuration list for PBXNativeTarget "Pods-OLOverlay-OLOverlay" */ = {
+		B4FE5D28A9F7074FD3915955 /* Build configuration list for PBXNativeTarget "Pods-OLOverlay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8FA9A5A623B99A7D47102B2D /* Debug */,
-				B35A9F295F2873A418ABEC6A /* Release */,
+				FB549C956533CB1F88EE12A3 /* Debug */,
+				0F0051CFECA2B7243215DF0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E29EC208CA9781335F155542 /* Project object */;
+	rootObject = 1523682D631108236304B610 /* Project object */;
 }
