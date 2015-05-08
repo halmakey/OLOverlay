@@ -11,7 +11,7 @@
 
 @interface UIViewController (OLOverlay)
 @property (nonatomic) id<OLOverlayAnimator> overlayAnimator;
-@property (nonatomic) BOOL overlayTapToClose;
+@property (nonatomic) BOOL overlayTouchToClose;
 @property (nonatomic, readonly) BOOL isOverlay;
 
 + (NSArray*)overlayViewControllers;

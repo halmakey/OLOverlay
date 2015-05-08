@@ -10,50 +10,37 @@
 #import <objc/runtime.h>
 #import "OLOverlayProtocol.h"
 
-// associated property
-
-#define ASSOCIATED_PROPERTY_POLICTY(type, policy, name, Name) \
-static char AssociationKey##Name; \
-\
-- (type)name \
-{ \
-return (type)objc_getAssociatedObject(self, &(AssociationKey##Name)); \
-} \
-\
-- (void)set##Name:(type)name \
-{ \
-objc_setAssociatedObject(self, &AssociationKey##Name, name, policy); \
-}
-
-#define ASSOCIATED_PROPERTY(type, name, Name) \
-ASSOCIATED_PROPERTY_POLICTY(type, OBJC_ASSOCIATION_RETAIN_NONATOMIC, name, Name)
-
-#define ASSOCIATED_PROPERTY_ASSIGN(type, name, Name) \
-ASSOCIATED_PROPERTY_POLICTY(type, OBJC_ASSOCIATION_ASSIGN, name, Name)
-
-#define ASSOCIATED_PROPERTY_COPY(type, name, Name) \
-ASSOCIATED_PROPERTY_POLICTY(type, OBJC_ASSOCIATION_COPY_NONATOMIC, name, Name)
-
-
 @interface UIGestureOverlayInterceptor : NSObject <UIGestureRecognizerDelegate>
-@property (nonatomic) UIGestureRecognizer *gestureRecognizer;
+@property (nonatomic) UILongPressGestureRecognizer *gestureRecognizer;
 - (void)addTarget:(id)target action:(SEL)action;
 - (void)removeTarget:(id)target action:(SEL)action;
 @end
 
+@interface OLOverlayState : NSObject
+@property (nonatomic) UIWindow *window;
+@property (nonatomic) UIGestureOverlayInterceptor *interceptor;
+@property (nonatomic) BOOL isOverlay;
+@property (nonatomic) id<OLOverlayAnimator> animator;
+@property (nonatomic) BOOL touchToClose;
+@property (nonatomic) BOOL isPresented;
+@end
+
+@implementation OLOverlayState
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _touchToClose = YES;
+    }
+    return self;
+}
+@end
+
 @interface UIViewController (OLOverlayPrivate)
-@property (nonatomic) UIWindow *overlayWindow;
-@property (nonatomic) UIGestureOverlayInterceptor *overlayInterceptor;
-@property (nonatomic, setter = setOverlay:) BOOL isOverlay;
+@property (nonatomic, readonly) OLOverlayState *overlayState;
 @end
 
 @implementation UIViewController (OLOverlay)
-
-ASSOCIATED_PROPERTY(UIWindow*, overlayWindow, OverlayWindow);
-ASSOCIATED_PROPERTY(UIGestureOverlayInterceptor*, overlayInterceptor, OverlayInterceptor);
-ASSOCIATED_PROPERTY(id<OLOverlayAnimator>, overlayAnimator, OverlayAnimator);
-ASSOCIATED_PROPERTY(NSNumber*, overlayTapToCloseNumber, OverlayTapToCloseNumber);
-ASSOCIATED_PROPERTY(NSNumber*, overlayFlag, OverlayFlag);
 
 + (void)load
 {
@@ -75,6 +62,26 @@ ASSOCIATED_PROPERTY(NSNumber*, overlayFlag, OverlayFlag);
     return controllers.copy;
 }
 
+- (void)setOverlayAnimator:(id<OLOverlayAnimator>)overlayAnimator
+{
+    self.overlayState.animator = overlayAnimator;
+}
+
+- (id<OLOverlayAnimator>)overlayAnimator
+{
+    return self.overlayState.animator;
+}
+
+- (OLOverlayState*)overlayState
+{
+    OLOverlayState *state = objc_getAssociatedObject(self, _cmd);
+    if (!state) {
+        state = [[OLOverlayState alloc] init];
+        objc_setAssociatedObject(self, _cmd, state, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
+    return state;
+}
+
 - (void)showOverlay
 {
     [self showOverlayAnimated:YES completion:nil];
@@ -82,7 +89,10 @@ ASSOCIATED_PROPERTY(NSNumber*, overlayFlag, OverlayFlag);
 
 - (void)showOverlayAnimated:(BOOL)animated completion:(void(^)())completion
 {
-    [self setOverlay:YES];
+    if (self.overlayState.isPresented) {
+        return;
+    }
+    self.overlayState.isOverlay = YES;
 
     UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [window setWindowLevel:UIWindowLevelNormal];
@@ -90,18 +100,20 @@ ASSOCIATED_PROPERTY(NSNumber*, overlayFlag, OverlayFlag);
     [window setRootViewController:self];
     [window makeKeyAndVisible];
 
-    [self setOverlayWindow:window];
+    self.overlayState.window = window;
 
     UIGestureOverlayInterceptor *overlayInterceptor = [[UIGestureOverlayInterceptor alloc] init];
-    [overlayInterceptor addTarget:self action:@selector(overlayTapAction:)];
+    [overlayInterceptor addTarget:self action:@selector(overlayTouchAction:)];
     [self.view addGestureRecognizer:overlayInterceptor.gestureRecognizer];
-    [self setOverlayInterceptor:overlayInterceptor];
+    self.overlayState.interceptor = overlayInterceptor;
 
     id<OLOverlayAnimator> animator = [self overlayAnimator];
 
     if ([self respondsToSelector:@selector(viewWillPresentOverlay)]) {
         [self performSelector:@selector(viewWillPresentOverlay)];
     }
+
+    self.overlayState.isPresented = YES;
 
     void (^animatorCompletion)() = ^{
 
@@ -128,22 +140,28 @@ ASSOCIATED_PROPERTY(NSNumber*, overlayFlag, OverlayFlag);
         return;
     }
 
+    if (!self.overlayState.isPresented) {
+        return;
+    }
+
     if ([self respondsToSelector:@selector(viewWillDismissOverlay)]) {
         [self performSelector:@selector(viewWillDismissOverlay)];
     }
 
-    void (^animatorCompletion)() = ^{
-        [self.view removeGestureRecognizer:self.overlayInterceptor.gestureRecognizer];
-        [self setOverlayInterceptor:nil];
+    self.overlayState.isPresented = NO;
 
-        [self.overlayWindow setRootViewController:nil];
-        [self setOverlayWindow:nil];
+    void (^animatorCompletion)() = ^{
+        [self.view removeGestureRecognizer:self.overlayState.interceptor.gestureRecognizer];
+        self.overlayState.interceptor = nil;
+
+        [self.overlayState.window setRootViewController:nil];
+        self.overlayState.window = nil;
 
         if ([self respondsToSelector:@selector(viewDidDismissOverlay)]) {
             [self performSelector:@selector(viewDidDismissOverlay)];
         }
 
-        [self setOverlay:NO];
+        self.overlayState.isOverlay = NO;
 
         if (completion) {
             completion();
@@ -158,37 +176,28 @@ ASSOCIATED_PROPERTY(NSNumber*, overlayFlag, OverlayFlag);
     }
 }
 
-- (void)overlayTapAction:(id)sender
+- (void)overlayTouchAction:(id)sender
 {
-    if ([self respondsToSelector:@selector(overlayTapToClose)]) {
-        if (![self overlayTapToClose]) {
-            return;
-        }
+    if (!self.overlayState.touchToClose) {
+        return;
     }
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-@dynamic overlayTapToClose;
-- (BOOL)overlayTapToClose
+@dynamic overlayTouchToClose;
+- (BOOL)overlayTouchToClose
 {
-    NSNumber *number = [self overlayTapToCloseNumber];
-    return number ? [number boolValue] : YES;
+    return self.overlayState.touchToClose;
 }
 
-- (void)setOverlayTapToClose:(BOOL)overlayTapToClose
+- (void)setOverlayTouchToClose:(BOOL)overlayTouchToClose
 {
-    NSNumber *number = [NSNumber numberWithBool:overlayTapToClose];
-    [self setOverlayTapToCloseNumber:number];
+    self.overlayState.touchToClose = overlayTouchToClose;
 }
 
 - (BOOL)isOverlay
 {
-    return [[self overlayFlag] boolValue];
-}
-
-- (void)setOverlay:(BOOL)isOverlay
-{
-    [self setOverlayFlag:[NSNumber numberWithBool:isOverlay]];
+    return self.overlayState.isOverlay;
 }
 @end
 
@@ -197,7 +206,8 @@ ASSOCIATED_PROPERTY(NSNumber*, overlayFlag, OverlayFlag);
 {
     self = [super init];
     if (self) {
-        _gestureRecognizer = [[UITapGestureRecognizer alloc] init];
+        _gestureRecognizer = [[UILongPressGestureRecognizer alloc] init];
+        _gestureRecognizer.minimumPressDuration = 0;
         [_gestureRecognizer setDelegate:self];
 
     }

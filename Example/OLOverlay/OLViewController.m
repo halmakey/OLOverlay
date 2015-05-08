@@ -36,7 +36,7 @@
 {
     UIViewController *controller = [[OLOneViewController alloc] init];
     controller.overlayAnimator = [OLZoomOverlayAnimator animator];
-    controller.overlayTapToClose = YES;
+    controller.overlayTouchToClose = YES;
     [controller showOverlayAnimated:YES completion:nil];
 }
 @end
