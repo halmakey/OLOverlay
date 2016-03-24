@@ -10,7 +10,7 @@
 #import "OLOneViewController.h"
 #import <OLOverlay.h>
 
-@interface OLViewController ()
+@interface OLViewController () <OLOverlayProtocol>
 
 @end
 
@@ -38,5 +38,21 @@
     controller.overlayAnimator = [OLZoomOverlayAnimator animator];
     controller.overlayTouchToClose = YES;
     [controller showOverlayAnimated:YES completion:nil];
+}
+
+- (void)viewWillCoverOverlay {
+    NSLog(@"viewWillCoverOverlay");
+}
+
+- (void)viewDidCoverOverlay {
+    NSLog(@"viewDidCoverOverlay");
+}
+
+- (void)viewWillClearOverlay {
+    NSLog(@"viewWillClearOverlay");
+}
+
+- (void)viewDidClearOverlay {
+    NSLog(@"viewDidClearOverlay");
 }
 @end
