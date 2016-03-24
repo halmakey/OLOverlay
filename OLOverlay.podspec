@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "OLOverlay"
-  s.version          = "0.4.0"
+  s.version          = "0.5.0"
   s.summary          = "Presents UIViewController like UIAlertView."
   s.description      = "This library provides a category for UIViewController with support presention UIViewController like UIAlertView with custom animation."
   s.homepage         = "https://github.com/halmakey/OLOverlay"
