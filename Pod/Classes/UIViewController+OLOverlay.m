@@ -17,6 +17,7 @@
 @end
 
 @interface OLOverlayState : NSObject
+@property (nonatomic, weak) UIViewController *underViewController;
 @property (nonatomic) UIWindow *window;
 @property (nonatomic) UIGestureOverlayInterceptor *interceptor;
 @property (nonatomic) BOOL isOverlay;
@@ -93,6 +94,7 @@
         return;
     }
     self.overlayState.isOverlay = YES;
+    self.overlayState.underViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
 
     UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [window setWindowLevel:UIWindowLevelNormal];
@@ -109,17 +111,15 @@
 
     id<OLOverlayAnimator> animator = [self overlayAnimator];
 
-    if ([self respondsToSelector:@selector(viewWillPresentOverlay)]) {
-        [self performSelector:@selector(viewWillPresentOverlay)];
-    }
+    [self.overlayState.underViewController notifyOverlaySelectorToChildlen:@selector(viewWillCoverOverlay)];
+    [self notifyOverlaySelectorToChildlen:@selector(viewWillPresentOverlay)];
 
     self.overlayState.isPresented = YES;
 
     void (^animatorCompletion)() = ^{
 
-        if ([self respondsToSelector:@selector(viewDidPresentOverlay)]) {
-            [self performSelector:@selector(viewDidPresentOverlay)];
-        }
+        [self notifyOverlaySelectorToChildlen:@selector(viewDidPresentOverlay)];
+        [self.overlayState.underViewController notifyOverlaySelectorToChildlen:@selector(viewDidCoverOverlay)];
 
         if (completion) {
             completion();
@@ -144,9 +144,9 @@
         return;
     }
 
-    if ([self respondsToSelector:@selector(viewWillDismissOverlay)]) {
-        [self performSelector:@selector(viewWillDismissOverlay)];
-    }
+    [self.overlayState.underViewController notifyOverlaySelectorToChildlen:@selector(viewWillClearOverlay)];
+    [self notifyOverlaySelectorToChildlen:@selector(viewWillDismissOverlay)];
+
 
     self.overlayState.isPresented = NO;
 
@@ -157,9 +157,8 @@
         [self.overlayState.window setRootViewController:nil];
         self.overlayState.window = nil;
 
-        if ([self respondsToSelector:@selector(viewDidDismissOverlay)]) {
-            [self performSelector:@selector(viewDidDismissOverlay)];
-        }
+        [self notifyOverlaySelectorToChildlen:@selector(viewDidDismissOverlay)];
+        [self.overlayState.underViewController notifyOverlaySelectorToChildlen:@selector(viewDidClearOverlay)];
 
         self.overlayState.isOverlay = NO;
 
@@ -182,6 +181,20 @@
         return;
     }
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)notifyOverlaySelectorToChildlen:(SEL)selector {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+    if ([self respondsToSelector:selector]) {
+        [self performSelector:selector];
+    }
+    for (UIViewController *controller in self.childViewControllers) {
+        if ([controller respondsToSelector:selector]) {
+            [controller performSelector:selector];
+        }
+    }
+#pragma clang diagnostic pop
 }
 
 @dynamic overlayTouchToClose;

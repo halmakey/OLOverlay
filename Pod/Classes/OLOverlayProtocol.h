@@ -14,4 +14,8 @@
 - (void)viewDidPresentOverlay;
 - (void)viewWillDismissOverlay;
 - (void)viewDidDismissOverlay;
+- (void)viewWillCoverOverlay;
+- (void)viewDidCoverOverlay;
+- (void)viewWillClearOverlay;
+- (void)viewDidClearOverlay;
 @end
